@@ -13,7 +13,7 @@ def makemap(inputnumber):
 
     for i in digits:
         sumofnumbers = sumofnumbers + i
-    print("Sum of numbers is: " + str(sumofnumbers))
+    print(f"Sum of numbers is: {sumofnumbers}")
     loopcount += 1
     if len(str(sumofnumbers)) > 1:
         makemap(sumofnumbers)
@@ -24,4 +24,4 @@ if len(str(number)) == 1:
     print(loopcount)
 else:
     answer = makemap(number)
-    print("Loops required: " + str(answer))
+    print(f"Loops required: {answer}")
