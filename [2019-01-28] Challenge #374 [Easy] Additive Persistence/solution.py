@@ -16,7 +16,7 @@ def calculate_additive_persistence(inputnumber):
     # Calculate the sum of the individual digits
     for i in digits:
         sumofnumbers = sumofnumbers + i
-    print("Sum of numbers is: " + str(sumofnumbers))
+    print(f"Sum of numbers is: {sumofnumbers}")
 
     # Increment the loop count
     loopcount += 1
@@ -36,4 +36,4 @@ if number < 10:
 else:
     answer = calculate_additive_persistence(number)
 
-print("Loops required: " + str(answer))
+print(f"Loops required: {answer}")
